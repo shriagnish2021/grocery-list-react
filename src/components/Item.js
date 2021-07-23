@@ -1,4 +1,4 @@
-import { FaTimes,FaPenSquare } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
 import { useState } from 'react'
 
 const Item = ({ item,onDelete,onEdit,id }) => {

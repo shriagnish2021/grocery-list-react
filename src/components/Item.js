@@ -20,7 +20,7 @@ const Item = ({ item,onDelete,onEdit,id }) => {
     }
     return (
     <tr contentEditable onInput={onInput} onBlur={() => onEdit(itemInput,id)} suppressContentEditableWarning>
-        <td><FaTimes style={{color:'red', cursor:'pointer'}} onClick={() => onDelete(item.itemName)}/>   {item.itemName}</td>
+        <td><FaTimes contentEditable="false" style={{color:'red', cursor:'pointer'}} onClick={() => onDelete(item.itemName)}/>   {item.itemName}</td>
         <td>{item.units}</td>
         <td>{item.price}</td>
         <td contentEditable="false" suppressContentEditableWarning>{item.price * item.units}</td>

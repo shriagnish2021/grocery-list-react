@@ -11,6 +11,7 @@ const GroceryItems = ({ items,onDelete,onEdit }) => {
             <table>
                 <thead>
                     <tr>
+                        <th>Action</th>
                         <th>Grocery Item</th>
                         <th>No. of Units</th>
                         <th>Per unit price</th>

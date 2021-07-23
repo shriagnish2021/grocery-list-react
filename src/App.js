@@ -23,8 +23,10 @@ function App() {
     setItems(items.filter(item => item.itemName !== itemName))
   }
   const editItem = (editedItem,id) => {
-    const itemsApartFromEditedItem = items.filter(item => item.itemName !== id)
-    setItems([...itemsApartFromEditedItem,editedItem])
+    let toEditItemIndex = items.findIndex(item => item.itemName === id)
+    let newArray = [...items]
+    newArray[toEditItemIndex] = editedItem
+    setItems(newArray)
   }
   return (
     <div className="container">

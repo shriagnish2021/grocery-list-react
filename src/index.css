@@ -55,3 +55,11 @@ td {
 thead {
   border-bottom: 1px solid black;
 }
+.edit {
+  border: 2px yellow solid;
+}
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus {
+  border: 2px yellow solid;
+  outline: none;
+}
